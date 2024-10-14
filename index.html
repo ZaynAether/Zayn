@@ -1,10 +1,11 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Existing Title</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Happy Valentine's Day</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"> <!-- Link to CSS -->
 </head>
 <body>
     <div class="container">
@@ -12,14 +13,9 @@
         <div class="heart"></div>
         <p class="message">You hold the key to my heart!</p>
         <button id="myButton">Click for a Surprise!</button>
+        <div id="surpriseMessage" class="hidden"></div> <!-- Surprise message -->
+        <img id="surpriseImage" class="hidden" src="surprise.png" alt="Surprise!"> <!-- Surprise image -->
     </div>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script> <!-- Link to JavaScript -->
 </body>
 </html>
-<div class="container">
-    <h1>Happy Valentine's Day!</h1>
-    <div class="heart"></div>
-    <p class="message">You hold the key to my heart!</p>
-    <button id="myButton">Click for a Surprise!</button>
-    <div id="surpriseMessage" class="hidden"></div> <!-- Surprise message div -->
-</div>
