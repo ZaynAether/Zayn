@@ -16,3 +16,15 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+// Add an event listener to the button for click events
+document.getElementById("myButton").addEventListener("click", function() {
+    // Get the surprise message div and set its text content
+    const surpriseDiv = document.getElementById("surpriseMessage");
+    surpriseDiv.textContent = "You're the peanut butter to my jelly! ❤️"; // Surprise message
+    surpriseDiv.classList.remove("hidden"); // Show the surprise message
+
+    // Get the surprise image element and display it
+    const surpriseImage = document.getElementById("surpriseImage");
+    surpriseImage.classList.remove("hidden"); // Show the surprise image
+});
