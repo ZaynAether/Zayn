@@ -75,3 +75,22 @@ button:hover {
         transform: scale(1.1); /* Slightly larger */
     }
 }
+.hidden {
+    display: none; /* Hide the surprise message/image by default */
+}
+
+#surpriseMessage {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #d5006d; /* Matching pink color */
+    padding: 10px;
+    border: 2px solid #d5006d; /* Border for emphasis */
+    background-color: #fff; /* White background */
+    border-radius: 5px; /* Rounded corners */
+    animation: fadeIn 0.5s; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
