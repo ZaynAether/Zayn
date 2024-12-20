@@ -1,4 +1,4 @@
-// Explore button action
-document.getElementById('exploreButton').addEventListener('click', () => {
-  alert('Explore the world of anime! More features coming soon.');
+// Explore Button
+document.getElementById('exploreBtn').addEventListener('click', () => {
+  alert('Welcome to the world of Anime! More features coming soon.');
 });
