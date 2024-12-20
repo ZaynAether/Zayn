@@ -1,21 +1,35 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specially For You!</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css"> <!-- Link to CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Paradise</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Happy Valentine's Day!</h1>
-        <div class="heart"></div>
-        <p class="message">You hold the key to my heart!</p>
-        <button id="myButton">Click for a Surprise!</button>
-        <div id="surpriseMessage" class="hidden"></div> <!-- Surprise message -->
-        <img id="surpriseImage" class="hidden" src="surprise.png" alt="Surprise!"> <!-- Surprise image -->
-    </div>
-    <script src="js/script.js"></script> <!-- Link to JavaScript -->
+  <header>
+    <h1>Anime Paradise</h1>
+    <p>Dive into the world of anime magic!</p>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Your Favorite Anime, All in One Place</h2>
+      <button id="exploreButton">Explore Now</button>
+    </section>
+
+    <section id="gallery">
+      <h2>Anime Gallery</h2>
+      <div class="image-grid">
+        <img src="https://via.placeholder.com/200" alt="Anime 1">
+        <img src="https://via.placeholder.com/200" alt="Anime 2">
+        <img src="https://via.placeholder.com/200" alt="Anime 3">
+        <img src="https://via.placeholder.com/200" alt="Anime 4">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 Anime Paradise. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
