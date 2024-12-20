@@ -1,58 +1,60 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5; /* Light background color */
-    text-align: center; /* Center align text */
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: white;
+  text-align: center;
 }
 
-.container {
-    margin-top: 50px; /* Space above the container */
+header {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffd700;
 }
 
-h1 {
-    color: #d5006d; /* Valentine's Day pink */
+.hero {
+  padding: 50px 20px;
+  background: url('https://via.placeholder.com/1920x500') no-repeat center center/cover;
+  color: white;
 }
 
-.heart {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-color: #d5006d; /* Heart color */
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Heart shape */
-    margin: 20px auto; /* Center the heart */
-    animation: heartbeat 1s infinite; /* Heartbeat animation */
+button {
+  background: #ffd700;
+  color: #4e54c8;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-@keyframes heartbeat {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
+button:hover {
+  background: #ff5733;
+  color: white;
 }
 
-.hidden {
-    display: none; /* Hide elements with this class */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px;
 }
 
-#surpriseMessage {
-    margin-top: 20px;
-    font-size: 1.5em;
-    color: #d5006d; /* Matching pink color */
-    padding: 10px;
-    border: 2px solid #d5006d; /* Border for emphasis */
-    background-color: #fff; /* White background */
-    border-radius: 5px; /* Rounded corners */
-    animation: fadeIn 0.5s; /* Fade-in animation */
+.image-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-#surpriseImage {
-    margin-top: 20px; /* Space above the image */
-    width: 200px; /* Set a width for the image */
-    height: auto; /* Maintain aspect ratio */
+footer {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  margin-top: 20px;
 }
